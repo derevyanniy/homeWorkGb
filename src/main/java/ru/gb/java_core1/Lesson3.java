@@ -65,7 +65,7 @@ public class Lesson3 {
         //8
         int[] arr8 = {1,2,3,4,5,6,7,8,9};
 
-        int[] arr8new = displacement(arr8, -3);
+        int[] arr8new = displacement(arr8, 0);
         System.out.println(Arrays.toString(arr8new));
 
 
