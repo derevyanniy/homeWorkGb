@@ -25,11 +25,15 @@ public class Phonebook{
     }
 
     public static void get (String name) {
-
+        int count = 0;
         for (Phonebook phonebook : book) {
             if (name.equals(phonebook.getSurname())) {
                 System.out.println(phonebook.getSurname() + " - " + phonebook.getPhoneNumber());
+                count++;
             }
+        }
+        if(count == 0){
+            System.out.println("Такого человека нет в телефонной книге");
         }
 
     }
@@ -49,6 +53,8 @@ public class Phonebook{
         Phonebook.get("Pupkin");
         System.out.println();
         Phonebook.get("Rogov");
+        System.out.println();
+        Phonebook.get("Fishkin");
         System.out.println();
         Phonebook.get("Kotov");
 
